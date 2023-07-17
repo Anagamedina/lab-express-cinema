@@ -1,0 +1,12 @@
+ 
+    <h1>Listado de películas</h1>
+    <ul>
+      {{#each movies}}
+        <li>
+          <h3>{{this.title}}</h3>
+          <img src="{{this.image}}" alt="{{this.title}}">
+          <a href="/movie/{{this._id}}">see details</a>
+        </li>
+      {{/each}}
+    </ul>
+ 
